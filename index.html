@@ -1,0 +1,471 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAST-STERN</title>
+    <script defer src="theme.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+  </head>
+  
+  <body>
+    
+    <nav class="navbar">
+      <ul class="navbar-nav">
+        <li class="logo">
+          <a href="#" class="nav-link">
+            <span class="link-text logo-text">FAST-STERN</span>
+            
+          </a>
+        </li>
+  
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <img
+              src="compu.png"
+              width="66px"
+              height="66px"
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fad"
+              data-icon="cat"
+              
+            >
+            <span class="link-text">INICIO</span>
+          </a>
+        </li>
+  
+        <li class="nav-item">
+          <a href="#box3" class="nav-link">
+            <img
+            src="dino.png"
+            width="66px"
+            height="66px"
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fad"
+              data-icon="alien-monster"
+             > 
+            <span class="link-text">NOSOTROS</span>
+          </a>
+        </li>
+  
+        <li class="nav-item">
+          <a href="#box4" class="nav-link">
+            <img
+              src="team.png"
+              width="66px"
+              height="66px"
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fad"
+              data-icon="space-station-moon-alt"
+              >
+            <span class="link-text">EQUIPO</span>
+          </a>
+        </li>
+  
+        <li class="nav-item">
+          <a href="#box5" class="nav-link">
+            <img
+              src="product.png"
+              width="66px"
+              height="66px"
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fad"
+              data-icon="space-shuttle"
+            > 
+            <span class="link-text">PRODUCTOS</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#box6" class="nav-link">
+            <img
+              src="support.png"
+              width="66px"
+              height="66px"
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fad"
+              data-icon="soporte"
+            > 
+            <span class="link-text">SOPORTE</span>
+          </a>
+      </li>
+
+      <li class="nav-item">
+          <a href="#box7" class="nav-link">
+            <img
+              src="contact.png"
+              width="66px"
+              height="66px"
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fad"
+              data-icon="contact"
+            > 
+            <span class="link-text">CONTACTO</span>
+          </a>
+      </li>
+    
+  
+        <li class="nav-item" id="themeButton">
+          <a href="#" class="nav-link">
+            <img
+              src="solar.png"
+              width="66px"
+              height="66px"
+              class="theme-icon"
+              id="lightIcon"
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fad"
+              data-icon="moon-stars"
+              
+            >
+            <img
+
+              src="trusolar.png"
+              width="66px"
+              height="66px"
+              class="theme-icon"
+              id="solarIcon"
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fad"
+              data-icon="sun"
+              
+            >
+            <img
+              src="night.png"
+              width="66px"
+              height="66px"
+              class="theme-icon"
+              id="darkIcon"
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fad"
+              data-icon="sunglasses"
+              
+            >
+            <span class="link-text">TEMITA</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  
+    <main>
+        
+    <div class="box1">
+    <center><img
+    src="fsLand.gif"
+    class="fs"
+    width="780px"
+    height="300px"
+    ></center>
+    </div>
+    <div class="box2", id="box2">
+        <h1>el pepe</h1>
+        <p>papure</p>
+        <img src="neiva2.png" class="object" data-value="-2" alt="">
+        <img src="moong2.png" class="object" data-value="6" alt="">
+        <img src="spinetto2.png" class="object" data-value="4" alt="">
+        <img src="magicat2.png" class="object" data-value="-6" alt="">
+        
+        <script type="text/javascript">
+            document.addEventListener("mouseup", parallax);
+            function parallax(e){
+                document.querySelectorAll(".object").forEach(function(move){
+    
+                    var moving_value = move.getAttribute("data-value");
+                    var x = (e.clientX * moving_value)/250;
+                    var y = (e.clientY * moving_value)/250;
+    
+                    move.style.transform = "translateX(" + x + " px) translateY("+ y +"px)";
+                });
+            }
+    
+        </script>
+    </div>   
+
+    <div class="box3", id="box3">
+      <center><img src="somos.gif", width="700px" height="280px"></center>
+
+      <br><br>
+      <blockquote>
+        <blockquote>
+          <blockquote>
+            <blockquote>
+          <p> FAST-STERN es una empresa fundada en el lejano
+            2022, bajo el contexto de la creacion de una
+            empresa desarrolladora de software, 
+            despues de una
+            ardua busqueda del fundador, 
+            se logro formar un equipo 
+            de elite con el que se desarrollo nuestro primer
+            proyecto: "SPINETTO"!!!
+          </p>
+        </blockquote>
+      </blockquote>
+    </blockquote>
+    <br><br>
+    <blockquote>
+      <blockquote>
+    <blockquote>
+      <blockquote>
+        <p class="pp"> En el 2023 se continuo el legado
+          con un nuevo equipo de trabajo, y nuevas ideas.
+          Fue en este momento en que FAST-STERN alcanzo
+          un punto maximo en creatividad y exito, llegando
+          a tener el premio al mejor proyecto, con nuestro
+          segundo juego: "BioCatchers"!!!
+        </p>
+      </blockquote>
+    </blockquote>
+  </blockquote>
+    </blockquote>
+    <br><br>
+    <blockquote>
+      <blockquote>
+        <p class="sech"> Este 2024 se busca alcanzar la gloria
+          una vez mas, con un totalmente nuevo y renovado
+          equipo de trabajo, con una nueva y ambiciosa idea,
+          FAST-STERN busca refrescarse con nuestro mas reciente
+          y espectacular producto:
+          "KLANG-SÖBA"!!!
+          Siempre tratando de superarnos, y guiarnos por nuestro
+          estrelloso eslogan:
+
+        </p>
+      </blockquote>
+    </blockquote>
+    <br><br><br><br>
+        <center><h1>SPEED OF LIGHT, BEYOND OUR LIMITS...</h1></center>
+    </div>
+
+    <div class="box4", id="box4">
+      <center><img src="TIMU.png", width="700px" height="280px"></center>
+      <br><br><br><br>
+      <style>
+        table {
+          border-collapse: collapse;
+          width: 100%;
+        }
+      
+        th, td {
+          border: 0px solid #ddd;
+          padding: 8px;
+          text-align: center;
+        }
+      
+        
+      </style>
+      <table>
+        <tr>
+          <th class="leni"><div class="lenin"></div><h1 class="hector">Lenin</h1></th>
+          <th class="nico"><div class="nicolas"><h1 class="inaki">Nicolas</h1></div></th>
+          <th class="cara"><div class="carapia"><h1 class="brandon">Carapia</h1></div></th>
+        </tr>
+        
+        <tr>
+          <td colspan="2" class="pingui"><div class="pinguino"><h1 class="alonso">Pingüino</h1></div></td>
+          <td class="san"><div class="santi"></div><h1 class="marti">Santiago</h1></td>
+        </tr>
+      </table>
+    
+     
+    
+             
+                  
+      
+     
+      
+    
+<br>
+      
+          
+    </div>
+
+    <div class="box5", id="box5">
+      <br><br><br><br><br><br><br><br>
+      <center><img src="chamoritu.png", width="700px" height="280px"></center>
+      <center><h1 class="foldme">(Haz click en un folder!!!)</h1></center>
+      <style>
+        table {
+          border-collapse: collapse;
+          width: 100%;
+        }
+      
+        th, td {
+          border: 0px solid #ddd;
+          padding: 8px;
+          text-align: center;
+        }
+      
+        
+      </style>
+      <table class="pro">
+        <tr>
+          <th class="foldspine"><a href="https://fallproune.github.io/SPINETTO" target="_blank"><div class="folderS"></div></a></th>
+          <th class="nico"></th>
+          <th class="foldbc"><a href="https://carlosmanzano456.github.io/BioCatchers.github.io/" target="_blank"><div class="folderN"></div></a></div></th>
+        </tr>
+        
+        <tr>
+          <td colspan="2" class="foldks"><a href="https://youtu.be/9bZkp7q19f0?si=Zb1itOH9WF5HyPDT" target="_blank"><div class="folderM"></div></a></td>
+          <td class="san"></td>
+        </tr>
+      </table>
+    
+      
+    </div>
+
+    <div class="box6" id="box6">
+      <h1>SOPORTE</h1>
+      <div class="inner-container">
+          <div class="inner-box" id="faq">
+              <h2>FAQ</h2>
+              <p>Encuentra respuestas a preguntas frecuentes.</p>
+              <img src="faq.gif" alt="FAQ Image">
+          </div>
+          <div class="inner-box" id="reportes">
+              <h2>Reportes</h2>
+              <p>Envía reportes sobre problemas o errores.</p>
+              <img src="suggest.png" alt="Reportes Image">
+          </div>
+          <!--forms sugerencias:https://docs.google.com/forms/d/e/1FAIpQLSeHq4Ya9K8-_p6iL_KrPY44DMaFshiLeZXWi2dZEb8GxIsNtQ/viewform-->
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeHq4Ya9K8-_p6iL_KrPY44DMaFshiLeZXWi2dZEb8GxIsNtQ/viewform" target="_blank" style='text-decoration:none;color:black;'>
+          <div class="inner-box" id="sugerencias" >
+              
+                <h2>Sugerencias</h2>
+                <p>Comparte tus sugerencias para mejorar nuestro servicio.</p>
+                <img src="suggestion.png" alt="Sugerencias Image" >
+              
+          </div>
+          </a>
+          <!--div de los reportes-->
+          <!--forms tipo1: https://docs.google.com/forms/d/e/1FAIpQLSefjHmXlXLtXX2fY1Ffa49dTkLzJkhkm2hI9s-Ojo-W_1V6fg/viewform-->
+          <!--forms tipo2: https://docs.google.com/forms/d/e/1FAIpQLSdhsmdVDNgSIy875TcOouOWWwFx2Q38tXsKKPJye0PljSPZ0g/viewform-->
+          <!--forms tipo3: https://docs.google.com/forms/d/e/1FAIpQLSfLYkGuisjtY9Tge6lCGpwU0nY48WQNmN9xm5WG5h8faxGqnw/viewform-->
+          <div id="reportesContent" class="reporthidden">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSefjHmXlXLtXX2fY1Ffa49dTkLzJkhkm2hI9s-Ojo-W_1V6fg/viewform?pli=1" target="_blank" style='text-decoration:none;color:black;'>
+              <div class="inner-box" id="tipo1">
+                <h4>ERROR TIPO 1</h4>
+                <h5>Bugs en el juego</h5>
+                <p>Este tipo de error se refiere a algun error encontrado en algun momento en el juego.
+                  Por ejemplo;
+                  En este momento al matar un enemigo no me aroja un item y/o me hace daño sin que me haya atacado.
+                </p>
+              </div>
+            </a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdhsmdVDNgSIy875TcOouOWWwFx2Q38tXsKKPJye0PljSPZ0g/viewform" target="_blank" style='text-decoration:none;color:black;'>
+              <div class="inner-box" id="tipo2">
+                <h4>ERROR TIPO 2</h4>
+                <h5>Error en el guardado de datos</h5>
+                <p>Este tipo de error se refiere a que en algun momento un item u otro aspecto de guardado no se guarda en mi usuario.
+                  Por ejemplo;
+                  Mate varios enemigos y recogi los items, sin embargo, mi almanaque aparece vacio al momento de abrirlo.</p>
+              </div>
+            </a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfLYkGuisjtY9Tge6lCGpwU0nY48WQNmN9xm5WG5h8faxGqnw/viewform" target="_blank" style='text-decoration:none;color:black;'>
+              <div class="inner-box" id="tipo 3">
+                <h4>ERROR TIPO 3</h4>
+                <h5>Cierre del juego en su totalidad</h5>
+                <p>Este tipo de error se refiere a que en algun momento al hacer una accion se me cierra el juego repentinamente.
+                  Por ejemplo;
+                  Al hacer uso del sintetizador, cerrarlo y spamear esta acción se me cierra el juego sin un aviso previo.</p>
+              </div>
+            </a>
+          </div>
+  
+          <div id="FAQContent" >
+            
+            <div class="Items">
+              <p id="FAQTitle">PREGUNTAS FRECUENTES</p>
+              <div class="faq-item">
+                  <div class="question-container">
+                      <h4 class="question">¿Si salgo del juego se guardan mis ítems recolectados?</h4>
+                      <p class="answer">No, no se guardarán tus ítems si sales del juego. Para que se guarden los ítems tienes que ir al menú de pausa presionando la tecla “ESC” y darle al botón Guardar Partida.</p>
+                      <img src="guardarPartida.jpeg" alt="PartidaI Image" >
+                  </div>
+              </div>
+              <div class="faq-item">
+                  <div class="question-container">
+                      <h4 class="question">¿Cómo puedo realizar un seguimiento de mi reporte?</h4>
+                      <p class="answer">Una vez que tu pedido haya sido enviado, recibirás un correo electrónico con un mensaje por parte de nuestro personal, el cual indicara cual sera el estado al que pertenece dicho reporte.</p>
+                  </div>
+              </div>
+              <div class="faq-item">
+                  <div class="question-container">
+                      <h4 class="question">¿Cómo puedo desbloquear un instrumento?</h4>
+                      <p class="answer">Para desbloquear un instrumento necesitas recolectar ítems en especifico para poder desbloquear el instrumento, para esto puedes acceder al menú de instrumentos por medio de la tecla “M”, ahí podrás visualizar todos los instrumentos con sus respectivos ítems para desbloquearlo.</p>
+                  </div>
+              </div>
+              <div class="faq-item">
+                <div class="question-container">
+                    <h4 class="question">¿Al desbloquear algún instrumento se guarda automáticamente?</h4>
+                    <p class="answer">Sí, el instrumento que desbloquees se guardara automáticamente en la cuenta que hayas registrado.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+              <div class="question-container">
+                  <h4 class="question">¿Cómo puedo grabar pistas de audio con los instrumentos?</h4>
+                  <p class="answer">Para grabar una pista de audio solo tienes que acceder al instrumento. Una vez estando dentro del instrumento, tienes que pulsar el botón de play</p>
+                  <img src="BtnPlay.jpeg" alt="Play Image" >
+                  <p class="answer">Este iniciara un contador que son los segundos que llevará la grabación, ahora solo tienes que tocar lo que quieras en el instrumento. Para guardar tu pista de audio tienes que parar la grabación pulsando el botón de stop</p>
+                  <img src="StopBTN.jpeg" alt="BTNStop Image" >
+                  <p class="answer">Ahora solo tendrás que darle click al botón de guardado</p>
+                  <img src="GRDBtn.jpeg" alt="GRDbtn Image" >
+                  <p class="answer">Ahora solo tendras que seleccionar alguna carpeta de su computadora para guardar el archivo y guardar su pista de audio.</p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div class="question-container">
+                  <h4 class="question">¿Cómo puedo mezclar mis pistas de audio?</h4>
+                  <p class="answer">Para mezclar tus pistas de audio tendrás que buscar en el mapa un elemento interactuable.</p>
+                  <p class="answer">Una vez que lo hayas encontrado solo tienes que darle click a este elemento y este te abrirá un menú en donde podrás seleccionar 2 pistas de audio, pero, para poder mezclarlas tendrás que gastar ciertos ítems para que se lleve a cabo dicha acción. Una vez que se hayan juntado podrás descargarla con el botón de descarga.</p>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!--Preguntas Frecuentes KS OMGGG
+
+¿Si salgo del juego se guardan mis ítems recolectados?
+No, no se guardarán tus ítems si sales del juego. Para que se guarden los ítems tienes que ir al menú de pausa presionando la tecla “ESC” y darle al botón Guardar Partida.
+(Imagen del botón Guardar Partida)
+
+
+¿Cómo puedo grabar pistas de audio con los instrumentos?
+Para grabar una pista de audio solo tienes que acceder al instrumento. Una vez estando dentro del instrumento, tienes que pulsar el botón de play
+(Imagen del botón de play)
+Este iniciara un contador que son los segundos que llevará la grabación, ahora solo tienes que tocar lo que quieras en el instrumento. Para guardar tu pista de audio tienes que parar la grabación pulsando el botón de stop
+(imagen del botón de stop)
+Ahora solo tendrás que darle click al botón de guardado
+(imagen del botón de guardado)
+Seleccionar alguna carpeta de su computadora para guardar el archivo y guardar su pista de audio.
+-->
+<div class="box7" id="box7">
+  <br><br><br><br><br><br>
+  <h1 id="conta">CONTACTO</h1>
+  <div class="contact-info">
+      <h1>Información de Contacto</h1>
+      <br>
+      <p><strong>Correo electrónico:</strong> fasterncontacto@gmail.com</p>
+      <br>
+      <p><strong>Teléfono:</strong> +52 55 4971 5897</p>
+      <br>
+      <p><strong>Dirección:</strong> Calle Papu, Ciudad Peluche, Paraguay</p>
+      <br><br><br>
+      <img src="wizard1.gif">
+
+  </div>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <img src="GOJIRA.gif" width="1000px" height="98px">
+</div>  
+    </main>
+  </body>
